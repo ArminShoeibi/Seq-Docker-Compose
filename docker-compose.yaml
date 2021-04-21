@@ -1,0 +1,11 @@
+services:
+  Seq:
+    image: datalust/seq:latest
+    container_name: C_Seq
+    hostname: H_Seq
+    ports:
+      - "5341:80"
+    restart: unless-stopped
+    environment:
+      - ACCEPT_EULA=Y
+  
